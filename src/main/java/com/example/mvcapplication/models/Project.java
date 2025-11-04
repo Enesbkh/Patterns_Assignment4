@@ -32,4 +32,6 @@ public class Project {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+    //ta pas fini la class, faut fr observable list et le call.
 }
