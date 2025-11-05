@@ -1,6 +1,8 @@
 package com.example.mvcapplication;
 
+import com.example.mvcapplication.controllers.DepartmentController;
 import com.example.mvcapplication.controllers.EmployeeController;
+import com.example.mvcapplication.views.DepartmentView;
 import com.example.mvcapplication.views.EmployeeView;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,11 +14,23 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
+        /*
         EmployeeController controller = new EmployeeController();
         EmployeeView view = new EmployeeView(controller);
 
         Scene scene = new Scene(view, 400, 300);
         stage.setTitle("Employee Table (MVC)");
+        stage.setScene(scene);
+        stage.show();
+        */
+
+        //Testing of the Department window
+        DepartmentController controller = new DepartmentController();
+        DepartmentView view = new DepartmentView(controller);
+
+        Scene scene = new Scene(view, 400, 300);
+        stage.setTitle("Departments (MVC)");
         stage.setScene(scene);
         stage.show();
     }

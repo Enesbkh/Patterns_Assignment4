@@ -1,43 +1,48 @@
 package com.example.mvcapplication.models;
 
+import com.example.mvcapplication.connectorMannager.ConnectionConnector;
 import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Department {
     private  int DepartmentId;
     private String DepartmentName;
 
-
     public Department(int departmentId, String departmentName) {
         DepartmentId = departmentId;
         DepartmentName = departmentName;
     }
+    public int getDepartmentId() {return DepartmentId;}
+    public String getDepartmentName() {return DepartmentName;}
 
-    public int getDepartmentId() {
-        return DepartmentId;
-    }
+    public void setDepartmentId(int departmentId) {DepartmentId = departmentId;}
+    public void setDepartmentName(String departmentName) {DepartmentName = departmentName;}
 
-    public void setDepartmentId(int departmentId) {
-        DepartmentId = departmentId;
-    }
+        //Use the DB to get the data(all the departments)
+        public static ObservableList<Department> getAllDepartments() {
+        ObservableList<Department> departmentData = FXCollections.observableArrayList();
 
-    public String getDepartmentName() {
-        return DepartmentName;
-    }
+        String query = "SELECT department_id, department_name FROM departments";
 
-    public void setDepartmentName(String departmentName) {
-        DepartmentName = departmentName;
-    }
+        try (Connection conn = ConnectionConnector.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
 
-    //NEEDS TO BE CALLED FROM DB
-    public static ObservableList<Department> getAllDepartments(){
-        ObservableList<Department> departmentsData = FXCollections.observableArrayList(
-                new Department(1 ,"Technology"),
-                new Department(2,"Buisness"),
-                new Department( 3,"Accounting")
-        );
-        return departmentsData;
+            while (rs.next()) {
+                int id = rs.getInt("department_id");
+                String name = rs.getString("department_name");
+                departmentData.add(new Department(id, name));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return departmentData;
     }
 
 
