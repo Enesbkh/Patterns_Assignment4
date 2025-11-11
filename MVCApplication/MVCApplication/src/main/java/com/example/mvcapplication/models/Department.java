@@ -28,15 +28,15 @@ public class Department {
         public static ObservableList<Department> getAllDepartments() {
         ObservableList<Department> departmentData = FXCollections.observableArrayList();
 
-        String query = "SELECT department_id, department_name FROM departments";
+        String query = "SELECT DepartmentID, DepartmentName FROM Department";
 
         try (Connection conn = ConnectionConnector.getConnection();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
 
             while (rs.next()) {
-                int id = rs.getInt("department_id");
-                String name = rs.getString("department_name");
+                int id = rs.getInt("DepartmentID");
+                String name = rs.getString("DepartmentName");
                 departmentData.add(new Department(id, name));
             }
         } catch (SQLException e) {

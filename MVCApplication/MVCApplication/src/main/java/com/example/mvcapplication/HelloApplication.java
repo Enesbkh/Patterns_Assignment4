@@ -10,12 +10,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, SQLException {
 
-        /*
+
         EmployeeController controller = new EmployeeController();
         EmployeeView view = new EmployeeView(controller);
 
@@ -23,16 +24,16 @@ public class HelloApplication extends Application {
         stage.setTitle("Employee Table (MVC)");
         stage.setScene(scene);
         stage.show();
-        */
+
 
         //Testing of the Department window
-        DepartmentController controller = new DepartmentController();
-        DepartmentView view = new DepartmentView(controller);
-
-        Scene scene = new Scene(view, 400, 300);
-        stage.setTitle("Departments (MVC)");
-        stage.setScene(scene);
-        stage.show();
+//        DepartmentController deptController = new DepartmentController();
+//        DepartmentView deptView = new DepartmentView(deptController);
+//
+//        Scene deptScene = new Scene(deptView, 400, 300);
+//        stage.setTitle("Departments (MVC)");
+//        stage.setScene(deptScene);
+//        stage.show();
     }
 
     public static void main(String[] args) {

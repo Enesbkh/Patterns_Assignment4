@@ -5,10 +5,7 @@ import javafx.beans.property.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Employee {
 
@@ -46,29 +43,55 @@ public class Employee {
     public IntegerProperty departmentIdProperty() {return departmentId;}
 
     //READ all employees from DB
-    public static ObservableList<Employee> getAllEmployees() {
+    public static ObservableList<Employee> getAllEmployees() throws SQLException {
         ObservableList<Employee> employeeData = FXCollections.observableArrayList();
 
-        String query = "SELECT employee_id, first_name, last_name, salary, department_id FROM employees";
+        String query = "SELECT EmployeeID, FirstName, LastName, Salary, DepartmentID FROM Employee";
 
-        try (Connection conn = ConnectionConnector.getConnection();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(query)) {
+        try {
+            Connection conn = ConnectionConnector.getConnection();
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(query);
 
             while (rs.next()) {
-                int id = rs.getInt("employee_id");
-                String firstName = rs.getString("first_name");
-                String lastName = rs.getString("last_name");
-                double salary = rs.getDouble("salary");
-                int deptId = rs.getInt("department_id");
+                int id = rs.getInt("EmployeeID");
+                String firstName = rs.getString("FirstName");
+                String lastName = rs.getString("LastName");
+                double salary = rs.getDouble("Salary");
+                int deptId = rs.getInt("DepartmentID");
 
                 employeeData.add(new Employee(id, firstName, lastName, salary, deptId));
             }
+        } catch (SQLException e) {
+            System.out.println(e.getClass());
+        }
+        return employeeData;
+    }
 
+    public static ObservableList<Employee> searchEmployees(String searched){
+        ObservableList<Employee> employeeResult = FXCollections.observableArrayList();
+        String query = "SELECT * FROM Employee where FirstName like ?";
+
+        try {
+            Connection conn = ConnectionConnector.getConnection();
+            PreparedStatement pstmt = conn.prepareStatement(query);
+            pstmt.setString(1,"%" + searched + "%");
+            ResultSet rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                employeeResult.add(new Employee(rs.getInt("EmployeeID"),
+                                                rs.getString("FirstName"),
+                                                rs.getString("LastName"),
+                                                rs.getDouble("Salary"),
+                                                rs.getInt("DepartmentId") ));
+            }
+
+            rs.close();
+            pstmt.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.println(e.getClass());
         }
-
-        return employeeData;
+        return employeeResult;
     }
 }

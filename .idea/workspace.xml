@@ -5,42 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9287d84c-fb25-4703-a2a3-ce2f193bbae2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/connectorMannager/ConnectionConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/connectorMannager/ConnectionConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/connectorMannager/ConnectionConnector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/controllers/DepartmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/controllers/ProjectController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/models/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/models/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/models/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/views/DepartmentView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/views/EmployeeView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mvcapplication/views/ProjectView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/mvcapplication/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$SIGNMENT-4.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/ProjectView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="357DiVyGhp4rlI2BbrG654iFlVx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,8 +39,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/6311228/Documents/New folder/Patterns_Assignment4"
+    "last_opened_file_path": "C:/Users/Bo/Desktop/Assignment 04/Patterns_Assignment4",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="TaskManager">
