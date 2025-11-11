@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9287d84c-fb25-4703-a2a3-ce2f193bbae2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/connectorMannager/ConnectionConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/connectorMannager/ConnectionConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/ProjectView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/ProjectView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +33,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Bo/Desktop/Assignment 04/Patterns_Assignment4",
+    "last_opened_file_path": "D:/Users/Bo/Documents/GitHub/Assignment 04/Patterns_Assignment4",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

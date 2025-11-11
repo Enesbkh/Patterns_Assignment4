@@ -11,9 +11,9 @@ public class  ConnectionConnector {
 
     public static Connection getConnection() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+//            Class.forName("com.mysql.cj.jdbc.Driver");
             return DriverManager.getConnection(URL, USER, PASS);
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             System.out.println(e.getClass());
             return null;
