@@ -17,23 +17,23 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException, SQLException {
 
 
-        EmployeeController controller = new EmployeeController();
-        EmployeeView view = new EmployeeView(controller);
-
-        Scene scene = new Scene(view, 400, 300);
-        stage.setTitle("Employee Table (MVC)");
-        stage.setScene(scene);
-        stage.show();
+//        EmployeeController controller = new EmployeeController();
+//        EmployeeView view = new EmployeeView(controller);
+//
+//        Scene scene = new Scene(view, 400, 300);
+//        stage.setTitle("Employee Table (MVC)");
+//        stage.setScene(scene);
+//        stage.show();
 
 
         //Testing of the Department window
-//        DepartmentController deptController = new DepartmentController();
-//        DepartmentView deptView = new DepartmentView(deptController);
-//
-//        Scene deptScene = new Scene(deptView, 400, 300);
-//        stage.setTitle("Departments (MVC)");
-//        stage.setScene(deptScene);
-//        stage.show();
+        DepartmentController deptController = new DepartmentController();
+        DepartmentView deptView = new DepartmentView(deptController);
+
+        Scene deptScene = new Scene(deptView, 400, 300);
+        stage.setTitle("Departments (MVC)");
+        stage.setScene(deptScene);
+        stage.show();
     }
 
     public static void main(String[] args) {

@@ -8,4 +8,6 @@ public class DepartmentController {
     public DepartmentController() {}
 
     public ObservableList<Department> getDepartments() {return Department.getAllDepartments();}
+    public ObservableList<Department> searchDepartments(String search){return Department.searchDepartments(search);}
+
 }

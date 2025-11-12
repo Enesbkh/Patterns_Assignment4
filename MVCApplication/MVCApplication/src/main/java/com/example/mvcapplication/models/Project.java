@@ -47,5 +47,4 @@ public class Project {
                 '}';
     }
 
-    //ta pas fini la class, faut fr observable list et le call.
-}
+ }

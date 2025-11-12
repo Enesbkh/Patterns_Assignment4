@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9287d84c-fb25-4703-a2a3-ce2f193bbae2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment4.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assignment4.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/models/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/DepartmentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/com/example/mvcapplication/views/DepartmentView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVCApplication/MVCApplication/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Enesbkh"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Enesbkh/Patterns_Assignment4.git",
+    "accountId": "2ce4d46e-22be-4c41-8cfe-a93766f9c0f3"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -30,15 +50,30 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/6311228/Desktop/ass4/Patterns_Assignment4",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Enes/IdeaProjects/ProgrammingPatternsAssignment4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.445977",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9287d84c-fb25-4703-a2a3-ce2f193bbae2" name="Changes" comment="" />
@@ -46,7 +81,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762452343794</updated>
+      <workItem from="1762911036576" duration="4153000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

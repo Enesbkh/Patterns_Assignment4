@@ -12,10 +12,7 @@ public class EmployeeController {
 
     }
 
-    public ObservableList<Employee> getEmployees() throws SQLException {
-        return Employee.getAllEmployees();
-    }
-
+    public ObservableList<Employee> getEmployees() throws SQLException {return Employee.getAllEmployees();}
     public ObservableList<Employee> searchEmployee(String search){
         return Employee.searchEmployees(search);
     }

@@ -2,10 +2,9 @@ package com.example.mvcapplication.views;
 
 import com.example.mvcapplication.controllers.DepartmentController;
 import com.example.mvcapplication.models.Department;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 public class DepartmentView extends VBox {
@@ -16,7 +15,7 @@ public class DepartmentView extends VBox {
         this.controller = controller;
         this.tableView = new TableView<>();
         this.createTable();
-        this.getChildren().addAll(new Label("Departments"), tableView);
+        this.getChildren().addAll(createSearchBox(), tableView); // 🔥 search box added here
         this.bindTableData();
     }
 
@@ -32,5 +31,18 @@ public class DepartmentView extends VBox {
 
     private void bindTableData() {
         tableView.setItems(controller.getDepartments());
+    }
+
+    private HBox createSearchBox(){
+        Label searchLabel = new Label("Department ID: ");
+        TextField searchTextField = new TextField();
+        Button searchButton = new Button("Search");
+
+        searchButton.setOnAction(e -> {
+            String searched = searchTextField.getText();
+            tableView.setItems(controller.searchDepartments(searched));
+        });
+        HBox searchBox = new HBox(10,searchLabel,searchTextField,searchButton);
+        return searchBox;
     }
 }
