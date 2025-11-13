@@ -2,8 +2,10 @@ package com.example.mvcapplication;
 
 import com.example.mvcapplication.controllers.DepartmentController;
 import com.example.mvcapplication.controllers.EmployeeController;
+import com.example.mvcapplication.controllers.ProjectController;
 import com.example.mvcapplication.views.DepartmentView;
 import com.example.mvcapplication.views.EmployeeView;
+import com.example.mvcapplication.views.ProjectView;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -27,12 +29,21 @@ public class HelloApplication extends Application {
 
 
         //Testing of the Department window
-        DepartmentController deptController = new DepartmentController();
-        DepartmentView deptView = new DepartmentView(deptController);
+//        DepartmentController deptController = new DepartmentController();
+//        DepartmentView deptView = new DepartmentView(deptController);
+//
+//        Scene deptScene = new Scene(deptView, 400, 300);
+//        stage.setTitle("Departments (MVC)");
+//        stage.setScene(deptScene);
+//        stage.show();
 
-        Scene deptScene = new Scene(deptView, 400, 300);
-        stage.setTitle("Departments (MVC)");
-        stage.setScene(deptScene);
+        //test project window
+        ProjectController projectController = new ProjectController();
+        ProjectView projectView = new ProjectView(projectController);
+
+        Scene projScene = new Scene(projectView,400, 300);
+        stage.setTitle("Projects (mvc)");
+        stage.setScene(projScene);
         stage.show();
     }
 
